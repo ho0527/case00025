@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="/website/externalcase/case00025/">
+        <title>翠鈞科技官網</title>
+        <link rel="shortcut icon" href="material/icon/favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="frontend/index.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <div class="navigationbar">
+            <div class="navigationbarlogodiv">
+                <img src="material/image/logo.svg" class="navigationbarlogo" onclick="location.href='frontend/'" draggable="false">
+            </div>
+            <div class="navigationbarbuttondiv">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/aboutus.html'" value="關於我們">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/casepage.html'" value="案例展示">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/serviceitem.html'" value="服務項目">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/contactus.html'" value="聯絡我們">
+                <input type="button" class="navigationbarbutton" onclick="location.href='frontend/'" value="FACEBOOK">
+            </div>
+        </div>
+
+        <div class="lineservice" id="lineservice">
+            <img src="material/image/line.png" class="image lineimage" id="lineimagenothover" draggable="false">
+            <img src="material/image/linehover.png" class="image lineimagehover" id="lineimagehover" draggable="false">
+        </div>
+
+        <div class="centertexttile xcenter">
+			<div class="linebefore" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400"></div>
+			<div class="titleword" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="title">Contact Us</div>
+                <div class="title2">聯絡我們</div>
+			</div>
+			<div class="lineafter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400"></div>
+		</div>
+
+        <div class="contactus xcenter">
+			<div class="contactusleft" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+				<form action="?">
+					<input type="text" class="contactusinput" placeholder="公司名稱">
+					<input type="text" class="contactusinput" placeholder="聯絡人">
+					<input type="text" class="contactusinput" placeholder="連絡電話">
+					<input type="text" class="contactusinput" placeholder="E-mial">
+					<textarea cols="30" rows="8" class="contactusinput" placeholder="諮詢項目"></textarea>
+					<button class="contactusinputbutton">送出</button>
+				</form>
+			</div>
+
+			<div class="contactusright" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+				<div class="contactusmap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.247333249374!2d120.29444687530477!3d22.719046579387726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0fd08c25c915%3A0x34f6265b574ed20a!2z576_6Yie56eR5oqA5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1719420920239!5m2!1szh-TW!2stw" width="" height="" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="contactusinfo">
+					<span class="contactusinfotitle">聯絡我們</span>
+					<p>
+						<span class="flexycenter"><img src="material/image/map.svg" class="icon">地址：高雄市楠梓區加仁路80巷21號</span>
+						<span class="flexycenter">
+                            <img src="material/image/phone.svg" class="icon">電話：07-7667607
+                            <img src="material/image/phone.svg" class="icon">電話：07-3648358
+                        </span>
+						<span class="flexycenter"><img src="material/image/fax.svg" class="icon">傳真：07-3648018</span>
+						<span class="flexycenter"><img src="material/image/email.svg" class="icon">信箱：fan.ker@yi-jun.com</span>
+					</p>
+				</div>
+			</div>
+        </div>
+
+        <div class="footer">
+            <div class="flex xcenter">
+                <div>
+                    <img src="material/image/logo.svg" class="image">
+                </div>
+                <div>
+                    <input type="button" class="footerbutton" onclick="location.href='frontend/aboutus.html'" value="關於我們"><br>
+                    <input type="button" class="footerbutton" onclick="location.href='frontend/'" value="案例展示"><br>
+                    <input type="button" class="footerbutton" onclick="location.href='frontend/'" value="服務項目">
+                </div>
+                <div class="textleft">
+                    <input type="button" class="footerbutton" onclick="location.href='frontend/'" value="聯絡我們">
+                    <div>
+                        地址：高雄市楠梓區加仁路80巷21號<br>
+                        電話：07-7667607<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07-3648358<br>
+                        傳真：07-3648018<br>
+                        信箱：fan.ker@yi-jun.com
+                    </div>
+                </div>
+                <div>
+                    <input type="button" class="footerfbbutton" onclick="location.href='frontend/'" value="Facebook">
+                </div>
+            </div>
+            <div class="footercopyright">《羿鈞科技有限公司》版權所有 © 2024</div>
+        </div>
+
+        <script src="frontend/initialize.js"></script>
+        <script src="frontend/index.js"></script>
+        <script src="frontend/animation.js"></script>
+    </body>
+</html>

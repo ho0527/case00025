@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="/website/externalcase/case00025/">
+        <title>翠鈞科技官網</title>
+        <link rel="shortcut icon" href="material/icon/favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="frontend/index.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="navigationbar">
+            <div class="navigationbarlogodiv">
+                <img src="material/image/logo.svg" class="navigationbarlogo" onclick="location.href='frontend/'" draggable="false">
+            </div>
+            <div class="navigationbarbuttondiv">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/aboutus.html'" value="關於我們">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/casepage.html'" value="案例展示">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/serviceitem.html'" value="服務項目">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/contactus.html'" value="聯絡我們">
+                <input type="button" class="navigationbarbutton" onclick="location.href='frontend/'" value="FACEBOOK">
+            </div>
+        </div>
+
+        <div class="lineservice" id="lineservice">
+            <img src="material/image/line.png" class="image lineimage" id="lineimagenothover" draggable="false">
+            <img src="material/image/linehover.png" class="image lineimagehover" id="lineimagehover" draggable="false">
+        </div>
+
+        <div class="centertexttile xcenter">
+			<div class="linebefore" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400"></div>
+			<div class="titleword" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="title color-white">ActualCase</div>
+                <div class="title2 color-rgb__154___222___255__">實際案例</div>
+			</div>
+			<div class="lineafter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400"></div>
+		</div>
+
+        <div id="carousel" class="casecarousel carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="material/image/case1.jpg" class="d-block w-100" draggable="false">
+                </div>
+                <div class="carousel-item">
+                    <img src="material/image/case2.jpg" class="d-block w-100" draggable="false">
+                </div>
+                <div class="carousel-item">
+                    <img src="material/image/case3.jpg" class="d-block w-100" draggable="false">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="footer">
+            <div class="flex xcenter">
+                <div>
+                    <img src="material/image/logo.svg" class="image">
+                </div>
+                <div>
+                    <input type="button" class="footerbutton" onclick="location.href='frontend/aboutus.html'" value="關於我們"><br>
+                    <input type="button" class="footerbutton" onclick="location.href='frontend/'" value="案例展示"><br>
+                    <input type="button" class="footerbutton" onclick="location.href='frontend/'" value="服務項目">
+                </div>
+                <div class="textleft">
+                    <input type="button" class="footerbutton" onclick="location.href='frontend/'" value="聯絡我們">
+                    <div>
+                        地址：高雄市楠梓區加仁路80巷21號<br>
+                        電話：07-7667607<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07-3648358<br>
+                        傳真：07-3648018<br>
+                        信箱：fan.ker@yi-jun.com
+                    </div>
+                </div>
+                <div>
+                    <input type="button" class="footerfbbutton" onclick="location.href='frontend/'" value="Facebook">
+                </div>
+            </div>
+            <div class="footercopyright">《羿鈞科技有限公司》版權所有 © 2024</div>
+        </div>
+
+        <script src="frontend/initialize.js"></script>
+        <script src="frontend/index.js"></script>
+        <script src="frontend/animation.js"></script>
+    </body>
+</html>
