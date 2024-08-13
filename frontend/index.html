@@ -12,10 +12,26 @@
     </head>
     <body>
         <div class="navigationbar">
-            <div class="navigationbarlogodiv">
+            <div class="navigationbarlogodiv ycenter pcshow">
                 <img src="material/image/logo.svg" class="navigationbarlogo" onclick="location.href='frontend/'" draggable="false">
             </div>
-            <div class="navigationbarbuttondiv">
+            <div class="navigationbarlogodiv xcenter pcnotshow">
+                <img src="material/image/logo.svg" class="navigationbarlogo" onclick="location.href='frontend/'" draggable="false">
+            </div>
+            <label for="burger" class="burger pcnotshow">
+                <div class="burgerline"></div>
+                <div class="burgerline"></div>
+                <div class="burgerline"></div>
+            </label>
+            <input type="checkbox" class="checkbox display-none" id="burger">
+            <div class="navigationbarbuttondiv ycenter pcshow">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/aboutus.html'" value="關於我們">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/casepage.html'" value="案例展示">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/serviceitem.html'" value="服務項目">
+                <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/contactus.html'" value="聯絡我們">
+                <input type="button" class="navigationbarbutton" onclick="location.href='frontend/'" value="FACEBOOK">
+            </div>
+            <div class="navigationbarbuttondiv pcnotshow">
                 <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/aboutus.html'" value="關於我們">
                 <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/casepage.html'" value="案例展示">
                 <input type="button" class="navigationbarbutton navigationbarbuttonhover" onclick="location.href='frontend/serviceitem.html'" value="服務項目">
@@ -144,7 +160,7 @@
 
         <div class="contactus xcenter">
 			<div class="contactusleft" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-				<form action="?">
+				<form action="">
 					<input type="text" class="contactusinput" placeholder="公司名稱">
 					<input type="text" class="contactusinput" placeholder="聯絡人">
 					<input type="text" class="contactusinput" placeholder="連絡電話">
@@ -162,9 +178,9 @@
 					<span class="contactusinfotitle">聯絡我們</span>
 					<p>
 						<span class="flexycenter"><img src="material/image/map.svg" class="icon">地址：高雄市楠梓區加仁路80巷21號</span>
-						<span class="flexycenter">
-                            <img src="material/image/phone.svg" class="icon">電話：07-7667607
-                            <img src="material/image/phone.svg" class="icon">電話：07-3648358
+						<span class="flexycenter flexWarp-warp">
+                            <span><img src="material/image/phone.svg" class="icon">電話：07-7667607</span>
+                            <span><img src="material/image/phone.svg" class="icon">電話：07-3648358</span>
                         </span>
 						<span class="flexycenter"><img src="material/image/fax.svg" class="icon">傳真：07-3648018</span>
 						<span class="flexycenter"><img src="material/image/email.svg" class="icon">信箱：fan.ker@yi-jun.com</span>

@@ -13765,24 +13765,24 @@ body {
 }
 
 .navigationbarlogo{
+	max-width: 175px;
+}
+
+.navigationbarlogodiv{
+	float: left;
 	cursor: pointer;
 }
 
 .navigationbar{
     background: rgb(0, 65, 142);
-	height: 100px;
-	padding: 0px 20px;
-    display: flex;
-	align-items: center;
-    justify-content: space-between;
+	height: 70px;
+	padding: 10px 20px;
 	z-index: 10;
 }
 
 .navigationbarbuttondiv{
     padding: 0px;
-    display: flex;
-	align-items: center;
-    justify-content: end;
+	float: right;
 }
 
 .navigationbarbutton{
@@ -13847,7 +13847,7 @@ body {
 	position: fixed;
 	bottom: 200px;
 	right: -40px;
-	width: 250px;
+	width: 225px;
 	border-radius: 10px;
 	z-index: 999;
 	cursor: pointer;
@@ -13857,14 +13857,14 @@ body {
 	position: fixed;
 	bottom: 0px;
 	right: -40px;
-	width: 250px;
+	width: 200px;
 }
 
 .lineimagehover{
 	position: fixed;
 	bottom: 0px;
 	right: -40px;
-	width: 275px;
+	width: 225px;
 	display: none;
 }
 
@@ -13873,13 +13873,13 @@ body {
 	margin: 50px 0px 10px 0px;
 	display: flex;
 	align-items: start;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
 .aboutusimage{
 	position: relative;
-	width: max(500px, 40%);
+	width: max(400px, 40%);
 	margin: 0px 5% 0px 0px;
 }
 
@@ -13896,7 +13896,7 @@ body {
 }
 
 .aboutustext{
-	width: max(500px,45%);
+	width: max(400px,45%);
 }
 
 .aboutustexttext{
@@ -14043,7 +14043,7 @@ body {
 
 .actualcase{
     position: relative;
-    width: 30%;
+    width: max(300px,30%);
     margin: 20px 0px;
     overflow: hidden;
 }
@@ -14088,7 +14088,7 @@ body {
 	margin: 50px 0px;
 	display: flex;
 	justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .contactusleft{
@@ -14194,6 +14194,7 @@ body {
 	display: flex;
 	align-items: start;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .footercopyright{
@@ -14280,34 +14281,26 @@ body {
 
 .servicedetailbuttonlist{
 	width: 225px;
+	margin: 10px 0px;
 }
 
 .servicedetaildivdiv{
 	width: 75%;
+	margin: 10px 0px;
 }
 
 .servicedetailtitle{
-    font-size: 40px;
-    letter-spacing: 5px;
+    font-size: 35px;
+    letter-spacing: 1px;
     color: white;
     padding: 0px 10px 0px 0px;
-}
-
-.servicedetailtitle::after{
-	content: "";
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	background: white;
-	width: 60%;
-	height: 2px;
 }
 
 .servicedetailcontextdiv{
 	margin: 20px 0px;
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
 }
 
 .servicedetailcontext{
@@ -14322,8 +14315,202 @@ body {
 	max-height: 100%;
 }
 
+.display-none{
+	display: none;
+}
+
+.flexWarp-warp{
+	flex-wrap: wrap;
+}
+
+/* rwd START */
+@media screen and (min-width: 1025px) {
+	.burger{
+		display: none;
+	}
+
+	.servicedetailtitle::after{
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		background: white;
+		width: 60%;
+		height: 2px;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1025px) {
+	.navigationbar{
+		transition: 0.5s linear;
+	}
+
+	.burger{
+		width: 50px;
+		height: 50px;
+		background: white;
+		padding: 0px 5px;
+		float: right;
+		display: flex !important;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		cursor: pointer;
+	}
+
+	.burgerline{
+		width: 100%;
+		height: 3px;
+		background: black;
+	}
+
+	.navigationbarbuttondiv{
+		width: 100%;
+		padding: 0px;
+		margin: 10px 0px;
+		transition: 0.5s linear;
+	}
+
+	.navigationbarbutton{
+		border: 1px white solid;
+		width: 100%;
+		background: rgb(177, 177, 177);
+		color: black;
+		padding: 5px 10px;
+		margin: 0px;
+	}
+
+	.navigationbarbuttondiv{
+		max-height: 0px;
+		overflow: hidden;
+	}
+
+	.checkbox:checked ~ .navigationbarbuttondiv{
+		max-height: 300px;
+	}
+
+	.navigationbar:has(.checkbox:checked){
+		height: 275px;
+	}
+
+	.titleword{
+		width: 50%;
+	}
+
+	.servicedetailbuttonlist{
+		width: 100%;
+	}
+
+	.servicedetaildivdiv{
+		width: 100%;
+	}
+
+	.servicedetailcontext{
+		width: 100%;
+		font-size: 20px;
+		line-height: 1.75;
+		text-align: justify;
+	}
+
+	.serviceitemdetailcontextimage{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.navigationbar{
+		transition: 0.5s linear;
+	}
+
+	.burger{
+		width: 50px;
+		height: 50px;
+		background: white;
+		padding: 0px 5px;
+		float: right;
+		display: flex !important;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		cursor: pointer;
+	}
+
+	.burgerline{
+		width: 100%;
+		height: 3px;
+		background: black;
+	}
+
+	.navigationbarbuttondiv{
+		width: 100%;
+		padding: 0px;
+		margin: 10px 0px;
+		transition: 0.5s linear;
+	}
+
+	.navigationbarbutton{
+		border: 1px white solid;
+		width: 100%;
+		background: rgb(177, 177, 177);
+		color: black;
+		padding: 5px 10px;
+		margin: 0px;
+	}
+
+	.navigationbarbuttondiv{
+		max-height: 0px;
+		overflow: hidden;
+	}
+
+	.checkbox:checked ~ .navigationbarbuttondiv{
+		max-height: 300px;
+	}
+
+	.navigationbar:has(.checkbox:checked){
+		height: 275px;
+	}
+
+	.centertexttile>.linebefore,.centertexttile>.lineafter{
+		display: none;
+	}
+
+	.titleword{
+		width: 100%;
+	}
+
+	.contactusleft{
+		width: 100%;
+	}
+
+	.contactusright{
+		width: 100%;
+	}
+
+	.servicedetailbuttonlist{
+		width: 100%;
+	}
+
+	.servicedetaildivdiv{
+		width: 100%;
+	}
+
+	.servicedetailcontext{
+		width: 100%;
+		font-size: 20px;
+		line-height: 1.75;
+		text-align: justify;
+	}
+
+	.serviceitemdetailcontextimage{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+/* rwd END */
+
 /* rwd show START */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 	.pcshow{
 		display: block;
 	}
@@ -14338,7 +14525,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 800px) and (max-width: 1024px) {
+@media screen and (min-width: 700px) and (max-width: 1025px) {
 	.pcshow{
 		display: none;
 	}
@@ -14353,7 +14540,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
 	.pcshow{
 		display: none;
 	}
