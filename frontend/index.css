@@ -13909,7 +13909,7 @@ body {
 .circle{
 	position: absolute;
 	scale: 0.7;
-    /* animation: circle 2s infinite ease; */
+    animation: circle 2s infinite ease;
 	z-index: 1;
 }
 
