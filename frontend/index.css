@@ -1,10 +1,23 @@
 @import url("icon.css");
 @import url("flag.css");
 
-body{
+html{
 	font-family: "Consolas";
+    width: 100vw;
+    height: 100vh;
 	padding: 0px;
 	margin: 0px;
+	overflow-x: hidden;
+}
+
+body{
+	font-family: "Consolas";
+    width: 100vw;
+    height: 100vh;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+	color: white;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -212,6 +225,19 @@ table{
 	align-items: center;
 	justify-content: space-between;
 }
+
+.textleft{
+	text-align: left;
+}
+
+.textcenter{
+	text-align: center;
+}
+
+.textright{
+	text-align: right;
+}
+
 /* END */
 
 
