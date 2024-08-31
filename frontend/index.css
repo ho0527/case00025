@@ -4,7 +4,7 @@
 html{
 	font-family: "Consolas";
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
@@ -13,7 +13,7 @@ html{
 body{
 	font-family: "Consolas";
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
@@ -400,6 +400,7 @@ body {
 }
 
 .mainsvg{
+    position: relative;
 	z-index: 10;
 }
 
@@ -588,7 +589,7 @@ body {
 .contactusinput{
     border: 1px solid rgb(194, 194, 194);
 	background: white;
-    width: 100%;
+    width: 90%;
     font-size: 15px;
     border-radius: 10px;
     padding: 15px;
@@ -632,7 +633,7 @@ body {
 }
 
 .contactusinfo{
-	width: 100%;
+	width: 85%;
 	background: white;
     border-radius: 10px;
 	color: black;
@@ -706,6 +707,7 @@ body {
 	border: 1px solid white;
 	background: none;
 	font-size: 20px;
+	color: white;
 	padding: 5px 10px;
 	transition-duration: 0.5s;
 	cursor: pointer;
