@@ -425,15 +425,16 @@ html{
 	html:not(.maindark) .lighthidden{
 		display: none !important;
 	}
+	html:not(.dark) .light-hidden{
+		display: none !important;
+	}
+
 }
 
 @media (prefers-color-scheme: dark){
 	html:not(.mainlight) .darkhidden{
 		display: none !important;
 	}
-}
-
-@media (prefers-color-scheme: dark){
 	.u-inverted{
 		color-scheme: light;
 
@@ -469,23 +470,10 @@ html{
 		--sttonal-warning-400: white7ae;
 		--sttonal-warning-800: #866800;
 	}
-}
 
-/* ==========================================================================Color Schemes========================================================================== */
-@media (prefers-color-scheme: light){
-	html:not(.dark) .light-hidden{
-		display: none !important;
-	}
-}
-
-@media (prefers-color-scheme: dark){
 	html:not(.light) .dark-hidden{
 		display: none !important;
 	}
-}
-
-/* Dark */
-@media (prefers-color-scheme: dark){
 	html:not(.light){
 		color-scheme: dark;
 
