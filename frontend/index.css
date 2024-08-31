@@ -560,6 +560,7 @@ body {
     box-shadow: 0px 0px 15px #1684CE;
 	background: none;
     font-size: 25px;
+	color: white;
     padding: 10px 20px;
 	margin: 50px 0px;
     transition: 0.3s;
@@ -633,7 +634,7 @@ body {
 }
 
 .contactusinfo{
-	width: 85%;
+	width: 90%;
 	background: white;
     border-radius: 10px;
 	color: black;
