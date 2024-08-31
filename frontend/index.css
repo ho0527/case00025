@@ -13766,7 +13766,7 @@ body {
 }
 
 .navigationbarlogo{
-	max-width: 175px;
+	max-width: 200px;
 }
 
 .navigationbarlogodiv{
@@ -13858,14 +13858,14 @@ body {
 	position: fixed;
 	bottom: 0px;
 	right: -40px;
-	width: 200px;
+	width: 120px;
 }
 
 .lineimagehover{
 	position: fixed;
 	bottom: 0px;
 	right: -40px;
-	width: 225px;
+	width: 150px;
 	display: none;
 }
 
@@ -14347,8 +14347,8 @@ body {
 	}
 
 	.burger{
-		width: 50px;
-		height: 50px;
+		width: 30px;
+		height: 30px;
 		background: white;
 		padding: 0px 5px;
 		float: right;
@@ -14422,14 +14422,17 @@ body {
 @media screen and (max-width: 700px) {
 	.navigationbar{
 		transition: 0.5s linear;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	.burger{
-		width: 50px;
-		height: 50px;
+		width: 30px;
+		height: 30px;
 		background: white;
 		padding: 0px 5px;
-		float: right;
+		/* float: right; */
 		display: flex !important;
 		align-items: center;
 		justify-content: space-between;
