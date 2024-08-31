@@ -42,103 +42,6 @@ table{
 	text-align: center;
 }
 
-/* .navigationbar{
-	border: 1px var(--navbar-border-color) solid;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 75px;
-	color: var(--navbar-color);
-	background: var(--navbar-background);
-	backdrop-filter: blur(30px);
-	box-shadow: 0 8px 32px 0 var(--navbar-boxshadow-color);
-	z-index: 600;
-} */
-
-/* .navigationbar2{
-	position: fixed;
-	top: 75px;
-	left: 0px;
-	width: 100%;
-	height: 50px;
-	color: var(--navbar-color);
-	background: var(--navbar-background);
-	backdrop-filter: blur(20px);
-	box-shadow: 0 8px 32px 0 var(--navbar-boxshadow-color);
-	z-index: 600;
-}
-
-.navigationbarleft{
-	max-width: 90%;
-	margin: 0px 10px;
-	display: flex;
-	align-items: center;
-	justify-content: left;
-}
-
-.navigationbar:has(>.navigationbarleft){
-	display: flex;
-	align-items: center;
-	justify-content: left;
-}
-
-.navigationbar:has(>.navigationbarright){
-	display: flex;
-	align-items: center;
-	justify-content: right;
-}
-
-.navigationbar:has(>.navigationbarleft):has(>.navigationbarright){
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.navigationbarright{
-	max-width: 90%;
-	margin: 0px 10px;
-	display: flex;
-	align-items: center;
-	justify-content: right;
-}
-
-.navigationbartitle{
-	font-size: 45px;
-	font-weight: bold;
-	margin-top: 5px;
-} */
-/*
-.navigationbarbutton{
-	border: 1px var(--navbar-color) solid;
-	background: none;
-	width: 150px;
-	height: 50px;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	color: var(--navbar-color);
-	padding: 10px;
-	margin: 0px 10px;
-	transition-duration: 0.5s;
-
-	&:hover{
-		background: var(--stgray-300);
-		color: var(--navbar-color);
-	}
-
-	&:active{
-		box-shadow: 0px 10px 30px 0 rgba(77,77,77,0.68);
-	}
-}
-
-.navigationbarselect{
-	background: var(--navbar-reverse-color);
-	color: var(--navbar-color);
-} */
-
 .center{
 	position: absolute;
 	top: 50%;
@@ -176,65 +79,6 @@ table{
 	width: 20px;
 	height: 20px;
 }
-
-.bluebutton{
-	box-shadow: inset 1px -3px 7px 0px #29bbff;
-	background: #2dabf9 linear-gradient(to bottom,#2dabf9 5%,#0688fa 100%);
-	border-radius: 5px;
-	border: 1px solid #0b0e07;
-	display: inline-block;
-	cursor: pointer;
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	margin: 5px 0px;
-	padding: 10px 20px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #263666;
-
-	&:hover{
-		background: #0688fa linear-gradient(to bottom,#0688fa 5%,#2dabf9 100%);
-	}
-
-	&:active{
-		position: relative;
-		top: 1px;
-	}
-}
-
-
-.reflashbutton{
-	margin-top: 20px;
-	padding: 5px;
-	background: rgb(215,164,61);
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	width: 100%;
-	height: 40px;
-	font-size: 20px;
-	font-weight: bold;
-	transition-duration: 0.5s;
-}
-
-.reflashbutton:hover{
-	background: rgb(255,213,128);
-	color: black;
-}
-
-.selectbutton{
-	background: rgba(35,35,35,0.75);
-	color: white;
-}
-
-/* .footer{
-	position: relative;
-	top: 10px;
-	width: 100%;
-	background: rgb(25,25,25);
-	padding: 5px 10px;
-} */
 
 .a{
 	text-decoration: none;
@@ -627,41 +471,6 @@ html{
 	}
 }
 
-/* Content */
-
-.stcontent.u-dark{
-	background: var(--stgray-50);
-	color: var(--stgray-800);
-}
-
-/* ========================================================================== Center ========================================================================== */
-
-.stcenter{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	flex-direction: column;
-	color: inherit;
-}
-
-/* ========================================================================== Variables ========================================================================== */
-
-/* ========================================================================== Base ========================================================================== */
-.ststash{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: calc(100% - var(--ststash-offset,5px));
-	visibility: hidden;
-	pointer-events: none;
-	flex-wrap: nowrap;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
 /* ==========================================================================Color Schemes========================================================================== */
 @media (prefers-color-scheme: light){
 	html:not(.dark) .light-hidden{
@@ -987,31 +796,6 @@ https://github.com/twbs/bootstrap/pull/31993
 https://github.com/twbs/bootstrap/blob/80621d6431acd964690f89352b4f1bf8be9cfaf3/scss/forms/_form-control.scss#L47
 */
 
-input::-webkit-date-and-time-value{
-	min-height: calc(1rem * 1.5);
-}
-
-/* ======================================================================== Button ======================================================================== */
-
-button{
-	border: none;
-	margin: 0;
-	padding: 0;
-	width: auto;
-	overflow: visible;
-	background: transparent;
-	color: inherit;
-	font: inherit;
-	line-height: normal;
-	appearance: none;
-	cursor: pointer;
-	user-select: none;
-
-	-webkit-font-smoothing: inherit;
-	-moz-osx-font-smoothing: inherit;
-	-webkit-appearance: none;
-}
-
 /* ======================================================================== Paragraphy ======================================================================== */
 
 /* [class*="st"]:where(p){
@@ -1047,54 +831,6 @@ button{
 }
 
 /* ========================================================================== Base ========================================================================== */
-
-.stbutton{
-	--horizontal-padding: 1.25em;
-	--height: var(--stinput-height-medium);
-	--accent-color: initial;
-	--accent-foreground-color: initial;
-
-	margin: 5px;
-	width: auto;
-	font: inherit;
-	outline: none;
-	box-sizing: border-box;
-	user-select: none;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	height: var(--height);
-
-	-webkit-font-smoothing: inherit;
-	-moz-osx-font-smoothing: inherit;
-	appearance: none;
-	-webkit-appearance: none;
-
-	border: 2px solid var(--accent-color,var(--stgray-800));
-	font-size: var(--stfont-size-14px);
-	line-height: 1.5;
-	font-weight: 500;
-	color: var(--accent-foreground-color,var(--stgray-50));
-	background: var(--accent-color,var(--stgray-800));
-	text-decoration: none;
-	display: inline-flex;
-	vertical-align: middle;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 0 var(--horizontal-padding);
-	border-radius: 0.4rem;
-	transition: 0.2s linear;
-}
-
-.stbutton:hover{
-	cursor: pointer;
-	opacity: 0.75;
-}
-
-.stbutton:focus{
-	outline: 0;
-}
 
 .button{
 	--horizontal-padding: 1.25em;
@@ -14422,9 +14158,6 @@ body {
 @media screen and (max-width: 700px) {
 	.navigationbar{
 		transition: 0.5s linear;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 	}
 
 	.burger{
@@ -14432,7 +14165,7 @@ body {
 		height: 30px;
 		background: white;
 		padding: 0px 5px;
-		/* float: right; */
+		float: right;
 		display: flex !important;
 		align-items: center;
 		justify-content: space-between;
