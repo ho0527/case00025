@@ -13572,7 +13572,7 @@ body {
 	position: fixed;
 	bottom: 200px;
 	right: -40px;
-	width: 225px;
+	width: 120px;
 	border-radius: 10px;
 	z-index: 999;
 	cursor: pointer;
@@ -13580,7 +13580,7 @@ body {
 
 .lineimage{
 	position: fixed;
-	bottom: 0px;
+	bottom: 100px;
 	right: -40px;
 	width: 120px;
 }
@@ -13927,13 +13927,6 @@ body {
 	text-align: center;
 	margin: 10px 0px 0px 0px;
 }
-
-/* @media (max-width: 1200px) {
-	footer .container {
-		display: block;
-		margin: 0 auto 20px;
-	}
-} */
 
 .footerbutton{
 	border: none;
