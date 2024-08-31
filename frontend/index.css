@@ -834,8 +834,8 @@ body {
 		width: 30px;
 		height: 30px;
 		background: white;
-		padding: 0px 5px;
-		margin: 10px 10px 0px 0px;
+        padding: 2.5px;
+        margin: 10px 5px 0px 0px;
 		float: right;
 		display: flex !important;
 		align-items: center;
@@ -917,8 +917,8 @@ body {
 		width: 30px;
 		height: 30px;
 		background: white;
-		padding: 0px 5px;
-		margin: 10px 10px 0px 0px;
+        padding: 2.5px;
+        margin: 10px 5px 0px 0px;
 		float: right;
 		display: flex !important;
 		align-items: center;
