@@ -348,7 +348,7 @@ body {
 
 .lineimagehover{
 	position: fixed;
-	bottom: 0px;
+	bottom: 100px;
 	right: -40px;
 	width: 150px;
 	display: none;
