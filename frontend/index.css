@@ -332,7 +332,7 @@ body {
 .lineservice{
 	position: fixed;
 	bottom: 200px;
-	right: -40px;
+	right: -30px;
 	width: 120px;
 	border-radius: 10px;
 	z-index: 999;
@@ -342,14 +342,14 @@ body {
 .lineimage{
 	position: fixed;
 	bottom: 100px;
-	right: -40px;
+	right: -30px;
 	width: 120px;
 }
 
 .lineimagehover{
 	position: fixed;
 	bottom: 100px;
-	right: -40px;
+	right: -30px;
 	width: 150px;
 	display: none;
 }
